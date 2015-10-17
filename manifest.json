@@ -1,0 +1,13 @@
+{
+  "name": "SSL2 Ruler",
+  "description": "Adds a ruler to shellshocklive2.com browser game.",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["http://*.shellshocklive2.com/*"],
+      "js": ["background.js"],
+      "css": ["ruler.css"]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+#rulerContainer {
+    max-width: 800px;
+    overflow: hidden;
+    margin-top: -100px;
+    position: absolute;
+}
+
+.ruler, .ruler li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+.ruler {
+    /*background: rgb(38, 50, 62);*/
+    /*box-shadow: rgb(88, 151, 178) 0 -1px 1em inset;*/
+    /*border-radius: 2px;*/
+    border-top: 1px solid #ccc;
+    color: #ccc;
+    margin: 0;
+    height: 3em;
+    padding-right: 1cm;
+    white-space: nowrap;
+}
+.ruler li {
+    padding-left: 1cm;
+    width: 2em;
+    margin: .64em -1em -.64em;
+    text-align: center;
+    position: relative;
+    text-shadow: 1px 1px hsl(60, 60%, 84%);
+}
+.ruler li:before {
+    content: '';
+    position: absolute;
+    border-left: 1px solid #ccc;
+    height: .64em;
+    top: -.64em;
+    right: 1em;
+}
