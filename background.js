@@ -38,5 +38,5 @@ rulerContainer.addEventListener("mouseleave", function() {
   var that = this;
   setTimeout(function() {
     that.style.zIndex = 1;
-  }, 1000, this);
+  }, 1500, this);
 });
